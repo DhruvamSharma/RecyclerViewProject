@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ArrayList<Contact> mArrayList = new ArrayList<>();
+    private ArrayList<ContactPOJO> mArrayList = new ArrayList<>();
     private RecyclerView mRecyclerView1;
     private RecyclerView mRecyclerView2;
     private CustomContactAdapter mAdapter;
@@ -47,49 +47,42 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void prepareData() {
-        Contact contact = null;
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        ContactPOJO contact = null;
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
 
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
-        contact = new Contact("Dhruvam","9467884671","22/12/1995");
+        contact = new ContactPOJO("Dhruvam","9467884671","22/12/1995");
         mArrayList.add(contact);
 
         mAdapter.notifyDataSetChanged();
     }
 
 
-    public void onRecyclerViewItemClicked(int position, int id)
-    {
-        if(id==-1){
-            Toast.makeText(getApplicationContext(), "complete item clicked", Toast.LENGTH_LONG).show();
-        }else{
-            Toast.makeText(getApplicationContext(), "setting button clicked", Toast.LENGTH_LONG).show();
-        }
-    }
+    
 }

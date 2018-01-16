@@ -15,10 +15,10 @@ import java.util.ArrayList;
 
 public class CustomContactAdapter extends RecyclerView.Adapter<CustomContactAdapter.MyViewHolder> {
 
-    private ArrayList<Contact> arrayList = new ArrayList<>();
+    private ArrayList<ContactPOJO> arrayList = new ArrayList<>();
     private OnRecyclerClickListener listener;
 
-    public CustomContactAdapter(ArrayList<Contact> arrayList, OnRecyclerClickListener listener) {
+    public CustomContactAdapter(ArrayList<ContactPOJO> arrayList, OnRecyclerClickListener listener) {
         this.listener = listener;
         this.arrayList = arrayList;
     }
@@ -36,7 +36,7 @@ public class CustomContactAdapter extends RecyclerView.Adapter<CustomContactAdap
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         Log.v("BindViewHolder", "in onBindViewHolder");
-        Contact contact = arrayList.get(position);
+        ContactPOJO contact = arrayList.get(position);
         holder.name.setText(contact.getmName());
         holder.number.setText(contact.getmNumber());
         holder.addedOn.setText(contact.getmAddedOn());

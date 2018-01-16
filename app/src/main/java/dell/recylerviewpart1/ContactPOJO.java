@@ -4,13 +4,13 @@ package dell.recylerviewpart1;
  * Created by dell on 16-01-2018.
  */
 
-public class Contact {
+public class ContactPOJO {
     private String mName;
     private String mNumber;
     private String mAddedOn;
 
-    public Contact() {}
-    public Contact (String name, String number, String addedOn) {
+    public ContactPOJO() {}
+    public ContactPOJO(String name, String number, String addedOn) {
         mName = name;
         mNumber = number;
         mAddedOn = addedOn;
